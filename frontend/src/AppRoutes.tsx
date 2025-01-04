@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
-import { to } from './../node_modules/@types/node/vm.d';
+// import { to } from './../node_modules/@types/node/vm.d';
 import Layout from './layouts/layout';
 import HomePage from './pages/HomePage';
 
@@ -8,7 +8,7 @@ function AppRoutes() {
     <Routes>
         <Route path="/" element={<Layout><HomePage/></Layout>} />
         <Route path="/about" element={<span>About US</span>} />
-        <Route path="*" element={<Navigate to="/" />} />
+        {/* <Route path="*" element={<Navigate to="/" />} /> */}
     </Routes>
   )
 }
